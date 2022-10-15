@@ -1,57 +1,53 @@
+import PropTypes from 'prop-types';
+import defaultImage from '../../logo512.png';
 
 export const Profile = (props) => {
-   return <div className="profile">
+    
+    const {
+        avatar = defaultImage,
+        username = "Unknow",
+        tag = "Unknow",
+        location = "Not rusia",
+        stats = "Unknow"} = props;
+   
+    return <div className="profile">
   <div className="description">
         <img
-        src={props.avatar}
+        src={avatar ?? defaultImage}
       alt="User avatar"
       className="avatar"
     />
-        <p className="name">{props.username}</p>
-        <p className="tag">{ props.tag}</p>
-    <p className="location">{props.location}</p>
+        <p className="name">{username}</p>
+        <p className="tag">{tag}</p>
+    <p className="location">{location}</p>
   </div>
 
   <ul className="stats">
     <li>
       <span className="label">Followers</span>
-      <span className="quantity">{props.stats.followers}</span>
+      <span className="quantity">{stats.followers}</span>
     </li>
     <li>
       <span className="label">Views</span>
-      <span className="quantity">{props.stats.views}</span>
+      <span className="quantity">{stats.views}</span>
     </li>
     <li>
       <span className="label">Likes</span>
-      <span className="quantity">{props.stats.likes}</span>
+      <span className="quantity">{stats.likes}</span>
     </li>
   </ul>
 </div>
 } 
 
+Profile.prototype = {
+    avatar: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    stats: PropTypes.number.isRequired,
+}
 
-// const rootElement = document.querySelector('#root');
-// const root = createRoot(rootElement);
 
-// root.render(
-//    <Profile
-//     username={user.username}
-//     tag={user.tag}
-//     location={user.location}
-//     avatar={user.avatar}
-//     stats={user.stats}
-//     />
-// );
-
-// App.createRoot(
-//   <Profile
-//     username={user.username}
-//     tag={user.tag}
-//     location={user.location}
-//     avatar={user.avatar}
-//     stats={user.stats}
-//   />
-// );
 
 
 
