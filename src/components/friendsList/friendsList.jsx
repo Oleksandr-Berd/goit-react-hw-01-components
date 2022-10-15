@@ -17,7 +17,7 @@ FriendsList.prototype = {
     avatar: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool,
+    isOnline: PropTypes.bool.isRequired,
 }
 
 export default FriendsList
