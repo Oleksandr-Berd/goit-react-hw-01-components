@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import defaultImage from '../../logo512.png';
+import css from 'components/profile/profile.modul.css';
 
-export const Profile = (props) => {
+const Profile = (props) => {
     
     const {
         avatar = defaultImage,
@@ -10,30 +11,30 @@ export const Profile = (props) => {
         location = "Not rusia",
         stats = "Unknow"} = props;
    
-    return <div className="profile">
-  <div className="descriptionProfile">
+    return <div className={css.profile}>
+  <div className={css.descriptionProfile}>
         <img
         src={avatar ?? defaultImage}
       alt="User avatar"
-      className="avatarProfile"
+      className={css.avatarProfile}
     />
-        <p className="nameProfile">{username}</p>
-        <p className="tagProfile">{tag}</p>
-    <p className="locationProfile">{location}</p>
+        <p className={css.nameProfile}>{username}</p>
+        <p className={css.tagProfile}>{tag}</p>
+    <p className={css.locationProfile}>{location}</p>
   </div>
 
-  <ul className="statsProfile">
+  <ul className={css.statsProfile}>
     <li>
-      <span className="labelProfile">Followers</span>
-      <span className="quantityProfile">{stats.followers}</span>
+      <span className={css.labelProfile}>Followers</span>
+      <span className={css.quantityProfile}>{stats.followers}</span>
     </li>
     <li>
-      <span className="labelProfile">Views</span>
-      <span className="quantityProfile">{stats.views}</span>
+      <span className={css.labelProfile}>Views</span>
+      <span className={css.quantityProfile}>{stats.views}</span>
     </li>
     <li>
-      <span className="labelProfile">Likes</span>
-      <span className="quantityProfile">{stats.likes}</span>
+      <span className={css.labelProfile}>Likes</span>
+      <span className={css.quantityProfile}>{stats.likes}</span>
     </li>
   </ul>
 </div>
@@ -46,6 +47,8 @@ Profile.prototype = {
     location: PropTypes.string.isRequired,
     stats: PropTypes.number.isRequired,
 }
+
+export default Profile;
 
 
 

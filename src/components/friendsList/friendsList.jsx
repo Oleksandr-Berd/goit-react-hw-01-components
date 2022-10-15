@@ -20,4 +20,4 @@ FriendsList.prototype = {
     isOnline: PropTypes.bool.isRequired,
 }
 
-export default FriendsList
+export default FriendsList;
