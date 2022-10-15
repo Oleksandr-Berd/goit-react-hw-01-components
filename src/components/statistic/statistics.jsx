@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const StatisticsList = ({items}) => {
   return <ul>
@@ -9,6 +9,12 @@ const StatisticsList = ({items}) => {
       </li>
     ))}
     </ul>
+}
+
+StatisticsList.prototype = {
+    label: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
 }
 
 export default StatisticsList

@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const TransactionHistory = ({items}) => {
   return <table className="transaction-history">
@@ -19,6 +19,13 @@ const TransactionHistory = ({items}) => {
     ))}
   </tbody>
       </table>
+}
+
+TransactionHistory.prototype = {
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.number.isRequired,
+    currency: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
 }
 
 export default TransactionHistory;

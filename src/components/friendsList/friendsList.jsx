@@ -1,4 +1,5 @@
 
+import PropTypes from 'prop-types';
 
 const FriendsList = ({items}) => {
   return <ul>
@@ -10,6 +11,13 @@ const FriendsList = ({items}) => {
     </li>
     ))}
       </ul>
+}
+
+FriendsList.prototype = {
+    avatar: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool,
 }
 
 export default FriendsList
