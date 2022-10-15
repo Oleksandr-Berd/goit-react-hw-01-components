@@ -11,29 +11,29 @@ export const Profile = (props) => {
         stats = "Unknow"} = props;
    
     return <div className="profile">
-  <div className="description">
+  <div className="descriptionProfile">
         <img
         src={avatar ?? defaultImage}
       alt="User avatar"
-      className="avatar"
+      className="avatarProfile"
     />
-        <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
-    <p className="location">{location}</p>
+        <p className="nameProfile">{username}</p>
+        <p className="tagProfile">{tag}</p>
+    <p className="locationProfile">{location}</p>
   </div>
 
-  <ul className="stats">
+  <ul className="statsProfile">
     <li>
-      <span className="label">Followers</span>
-      <span className="quantity">{stats.followers}</span>
+      <span className="labelProfile">Followers</span>
+      <span className="quantityProfile">{stats.followers}</span>
     </li>
     <li>
-      <span className="label">Views</span>
-      <span className="quantity">{stats.views}</span>
+      <span className="labelProfile">Views</span>
+      <span className="quantityProfile">{stats.views}</span>
     </li>
     <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{stats.likes}</span>
+      <span className="labelProfile">Likes</span>
+      <span className="quantityProfile">{stats.likes}</span>
     </li>
   </ul>
 </div>

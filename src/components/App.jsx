@@ -14,10 +14,14 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
-        justifyContent: 'center',
+        flexDirection: 'column',
+        flexWrap: 'nowrap',
+        justifyContent: 'normal',
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        alignContent: 'center',
+        fontSize: 30,
+        color: '#010101',
+        paddingLeft: '15px',
       }}
     >
       <Profile
