@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Oleksandr-Berd/goit-react-hw-01-components.git/static/css/main.7acaea2f.css",
+    "main.js": "/Oleksandr-Berd/goit-react-hw-01-components.git/static/js/main.0a696d11.js",
+    "index.html": "/Oleksandr-Berd/goit-react-hw-01-components.git/index.html",
+    "main.7acaea2f.css.map": "/Oleksandr-Berd/goit-react-hw-01-components.git/static/css/main.7acaea2f.css.map",
+    "main.0a696d11.js.map": "/Oleksandr-Berd/goit-react-hw-01-components.git/static/js/main.0a696d11.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.0a696d11.js"
+  ]
+}
