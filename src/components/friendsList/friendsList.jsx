@@ -1,12 +1,12 @@
 
 
-const FriendsList = ({friends}) => {
+const FriendsList = ({items}) => {
   return <ul>
-    {friends.map(friend => (
-      <li className="friend" key={friend.id}>
-            <span className="status">{friend.status}</span>
-            <img className="avatar" src={friend.avatar} alt="User avatar" width="48" />
-            <p className="name">{friend.name}</p>
+    {items.map(item => (
+      <li className="friend" key={item.id}>
+            <span className="status">{item.isOnline ? ("OnLine") : ("OffLine")}</span>
+            <img className="avatar" src={item.avatar} alt="User avatar" width="48" />
+            <p className="name">{item.name}</p>
     </li>
     ))}
       </ul>
