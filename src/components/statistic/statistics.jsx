@@ -1,5 +1,4 @@
-// import PropTypes from 'prop-types';
-import data from '../statistic/data.json';
+
 
 const StatisticsList = ({items}) => {
   return <ul>
@@ -9,7 +8,7 @@ const StatisticsList = ({items}) => {
         <span className="percentage">{item.percentage}%</span>
       </li>
     ))}
-      </ul>
+    </ul>
 }
 
 export default StatisticsList

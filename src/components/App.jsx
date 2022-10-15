@@ -1,7 +1,10 @@
 import { Profile } from './profile/profile';
 import user from './profile/user.json';
-import StatisticsList from './statistic/statistics'
-import data from '../components/statistic/data.json'
+import StatSection from './statistic/statSection';
+import StatisticsList from './statistic/statistics';
+import FriendsList from './friendsList/friendsList'
+import data from '../components/statistic/data.json';
+import friends from './friendsList/friends.json';
 
 export const App = () => {
   return (
@@ -15,16 +18,17 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <Profile
+      {/* <Profile
     username={user.username}
     tag={user.tag}
     location={user.location}
     avatar={user.avatar}
     stats={user.stats}
-      />
+      /> */}
+      {/* <StatSection title='Upload stats'/>
       <StatisticsList
         items = {data}
-      />
+      /> */}
     </div>
   );
 };
