@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types';
 
-const FriendsList = ({items}) => {
+export const FriendsList = ({items}) => {
   return <ul>
     {items.map(item => (
       <li className="friendFriendsList" key={item.id}>
@@ -20,4 +20,3 @@ FriendsList.prototype = {
     isOnline: PropTypes.bool.isRequired,
 }
 
-export default FriendsList;

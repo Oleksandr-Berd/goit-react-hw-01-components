@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const TransactionHistory = ({items}) => {
+export const TransactionHistory = ({items}) => {
   return <table className="transaction-history">
     <thead>
     <tr>
@@ -28,4 +28,4 @@ TransactionHistory.prototype = {
     id: PropTypes.string.isRequired,
 }
 
-export default TransactionHistory;
+

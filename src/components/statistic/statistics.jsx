@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 
-const StatisticsList = ({ items }) => {
-
-
+export const StatisticsList = ({ items }) => {
   return <ul>
     {items.map(item => (
       <li className="itemStatisticsList" key={item.id}>
@@ -19,5 +17,5 @@ StatisticsList.prototype = {
     percentage: PropTypes.number.isRequired,
 }
 
-export default StatisticsList;
+
 

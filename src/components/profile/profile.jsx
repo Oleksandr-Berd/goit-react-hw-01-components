@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import defaultImage from '../../logo512.png';
 import css from 'components/profile/profile.modul.css';
 
-const Profile = (props) => {
+export const Profile = (props) => {
     
     const {
         avatar = defaultImage,
@@ -11,7 +11,7 @@ const Profile = (props) => {
         location = "Not rusia",
         stats = "Unknow"} = props;
    
-    return <div className={css.profile}>
+    return <div key={username} className={css.profile}>
   <div className={css.descriptionProfile}>
         <img
         src={avatar ?? defaultImage}
@@ -48,7 +48,7 @@ Profile.prototype = {
     stats: PropTypes.number.isRequired,
 }
 
-export default Profile;
+
 
 
 
