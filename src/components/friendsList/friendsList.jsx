@@ -8,10 +8,10 @@ import { avatarSize } from 'constant';
 export const FriendsList = ({ items }) => {
   return <ul>
     {items.map(item => (
-      <li className="css.friendFriendsList" key={item.id}>
+      <li className={css.friendFriendsList} key={item.id}>
             <span className={`${css.statusFriendsList} ${css[item.isOnline]}`}>{item.isOnline ? ("OnLine") : ("OffLine")}</span>
-            <img className="avatarFriendsList" src={item.avatar} alt="User avatar" width={avatarSize.md} />
-            <p className="nameFriendsList">{item.name}</p>
+            <img className={css.avatarFriendsList} src={item.avatar} alt="User avatar" width={avatarSize.md} />
+            <p className={css.nameFriendsList}>{item.name}</p>
       </li>
     )
     )}
