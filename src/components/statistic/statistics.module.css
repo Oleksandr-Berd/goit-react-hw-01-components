@@ -1,0 +1,9 @@
+.itemStatisticsList{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.statisticsList{
+    display: flex;
+}

@@ -6,9 +6,7 @@
     font-size: 30px;
 }
 
-.statsProfile{
-    padding-right: 15px;
-    margin-top: 10px;
+.quantityProfile{
     font-size: 25px;
 }
 
@@ -16,4 +14,12 @@
     margin-right: 15px;
     font-size: 28px;
     font-style: italic;
+}
+
+.statsProfile{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding-right: 15px;
+    margin-top: 10px;
 }
