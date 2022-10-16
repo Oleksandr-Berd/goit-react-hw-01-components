@@ -1,16 +1,22 @@
 
 import PropTypes from 'prop-types';
+import css from 'components/friendsList/friendsList.module.css';
+import { avatarSize } from 'constant';
 
-export const FriendsList = ({items}) => {
+
+
+export const FriendsList = ({ items }) => {
   return <ul>
     {items.map(item => (
-      <li className="friendFriendsList" key={item.id}>
-            <span className="statusFriendsList">{item.isOnline ? ("OnLine") : ("OffLine")}</span>
-            <img className="avatarFriendsList" src={item.avatar} alt="User avatar" width="48" />
+      <li className="css.friendFriendsList" key={item.id}>
+            <span className={`${css.statusFriendsList} ${css[item.isOnline]}`}>{item.isOnline ? ("OnLine") : ("OffLine")}</span>
+            <img className="avatarFriendsList" src={item.avatar} alt="User avatar" width={avatarSize.md} />
             <p className="nameFriendsList">{item.name}</p>
-    </li>
-    ))}
-      </ul>
+      </li>
+    )
+    )}
+  </ul>
+
 }
 
 FriendsList.prototype = {

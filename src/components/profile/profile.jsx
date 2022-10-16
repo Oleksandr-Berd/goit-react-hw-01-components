@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import defaultImage from '../../logo512.png';
-import css from 'components/profile/profile.modul.css';
+import css from 'components/profile/profile.module.css';
+import { avatarSize } from 'constant';
 
 export const Profile = (props) => {
     
@@ -16,7 +17,8 @@ export const Profile = (props) => {
         <img
         src={avatar ?? defaultImage}
       alt="User avatar"
-      className={css.avatarProfile}
+          className={css.avatarProfile}
+          width={avatarSize.lg}
     />
         <p className={css.nameProfile}>{username}</p>
         <p className={css.tagProfile}>{tag}</p>
