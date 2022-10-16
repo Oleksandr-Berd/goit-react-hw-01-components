@@ -24,3 +24,21 @@ p{
 span{
   font-weight: bold;
 }
+
+thead{
+  background-color: azure;
+}
+
+th{
+  border: solid black;
+  padding: 15px;
+  margin: 0;
+}
+
+td{
+  border: solid black;
+  padding: 15px;
+  margin: 0;
+}
+
+
