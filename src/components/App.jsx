@@ -21,7 +21,7 @@ export const App = () => {
         alignContent: 'center',
         fontSize: 30,
         color: '#010101',
-        paddingLeft: '15px',
+        padding: '30px',
       }}
     >
       <Profile
