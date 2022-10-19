@@ -4,12 +4,11 @@ import css from 'components/friendsList/friendsList.module.css';
 import { avatarSize } from 'constant';
 import { FriendListItem } from './friendListItem';
 
-
-
-
 export const FriendsList = (friends) => {
+  
+  const friendsArray = Object.values(friends)
   return <ul>
-    {Object.keys(friends).map(friend => (
+    {friendsArray[0].map(friend => (
       <FriendListItem
         id = {friend.id}
         avatar={friend.avatar}
