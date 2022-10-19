@@ -10,7 +10,7 @@ import { arrayOf } from 'prop-types';
 
 
 
-console.log(friends[0]);
+console.log(...friends);
 
 export const App = () => {
   return (
@@ -26,7 +26,7 @@ export const App = () => {
       />
       <StatSection />
       <FriendsList
-        friends={[friends]} />
+        friends={[...friends]} />
       <Transaction
         items={transactions} />
     </div>

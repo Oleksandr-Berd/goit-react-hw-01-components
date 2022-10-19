@@ -9,7 +9,7 @@ import { FriendListItem } from './friendListItem';
 
 export const FriendsList = (friends) => {
   return <ul>
-    {friends.map(friend => (
+    {Object.keys(friends).map(friend => (
       <FriendListItem
         id = {friend.id}
         avatar={friend.avatar}
