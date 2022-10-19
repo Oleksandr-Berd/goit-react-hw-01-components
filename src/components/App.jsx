@@ -6,6 +6,11 @@ import friends from 'components/friendsList/friends.json';
 import {Transaction} from 'components/Transaction/transaction';
 import transactions from 'components/Transaction/transactions.json';
 import css from './appContainer.module.css'
+import { arrayOf } from 'prop-types';
+
+
+
+console.log(friends[0]);
 
 export const App = () => {
   return (
@@ -21,7 +26,7 @@ export const App = () => {
       />
       <StatSection />
       <FriendsList
-        items={friends} />
+        friends={[friends]} />
       <Transaction
         items={transactions} />
     </div>

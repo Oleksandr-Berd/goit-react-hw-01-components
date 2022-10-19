@@ -4,7 +4,7 @@ import css from 'components/friendsList/friendsList.module.css';
 import { avatarSize } from 'constant';
 
 
-export const friendListItem = ({ avatar, name, isOnline, id }) => {
+export const FriendListItem = ({ avatar, name, isOnline, id }) => {
     return <li className={css.friendFriendsList} key={id} style={{
         backgroundColor: isOnline ? 'greenyellow' : 'lightcoral'
       }}>
@@ -15,7 +15,7 @@ export const friendListItem = ({ avatar, name, isOnline, id }) => {
 }
 
 
-friendListItem.prototype = {
+FriendListItem.prototype = {
     avatar: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
